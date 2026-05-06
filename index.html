@@ -44,11 +44,10 @@ h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;line-heig
 
 /* Tally wrapper — limita altura no desktop */
 .tally-wrap{width:100%;margin-top:1.5rem}
-.tally-wrap iframe{width:100%;border:none;min-height:600px;display:block}
+.tally-wrap iframe{width:100%;border:none;display:block;min-height:800px}
 
 @media(min-width:768px){
-  .tally-wrap{width:100%;max-width:100%;overflow:hidden}
-  .tally-wrap iframe{max-width:600px;display:block;margin:0 auto}
+  .tally-wrap iframe{min-height:900px}
 }
 
 footer{background:#F0EDE6;border-top:1px solid #DDDDD8;padding:1.75rem 1.5rem;text-align:center}
@@ -121,7 +120,7 @@ footer a{color:#1A3A6B;text-decoration:none}
   </div>
   <div class="tally-wrap">
     <iframe
-      src="https://tally.so/embed/OD82PR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      src="https://tally.so/embed/OD82PR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+50)+'px'"
       loading="lazy"
       title="Formulário de pré-venda — Camisa Copa 2026"
     ></iframe>
@@ -135,6 +134,17 @@ footer a{color:#1A3A6B;text-decoration:none}
 
 <script>
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});}));
+
+window.addEventListener('message',function(e){
+  if(e.data&&e.data.type==='tally-form-loaded'){
+    var iframe=document.querySelector('.tally-wrap iframe');
+    if(iframe) iframe.style.minHeight='none';
+  }
+  if(e.data&&e.data.type==='tally-form-height-changed'&&e.data.height){
+    var iframe=document.querySelector('.tally-wrap iframe');
+    if(iframe) iframe.style.height=e.data.height+'px';
+  }
+});
 </script>
 </body>
 </html>
