@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camisa Copa 2026 — Torcida Bemol</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:#FAFAF8;color:#111;-webkit-font-smoothing:antialiased}
+.badge{display:inline-block;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:#1A3A6B;border:1px solid #1A3A6B;padding:5px 14px;margin-bottom:1.5rem}
+.hero{background:#fff;border-bottom:1px solid #EAEAE6}
+.hero-img{width:100%;display:block;object-fit:cover;object-position:top center;max-height:420px}
+.hero-text{padding:2rem 1.5rem 2.5rem;max-width:480px;margin:0 auto}
+h1{font-family:'Playfair Display',serif;font-size:clamp(24px,6vw,32px);font-weight:700;line-height:1.2;color:#111;margin-bottom:.75rem}
+h1 em{font-style:italic;color:#1A3A6B}
+.sub{font-size:14px;line-height:1.75;color:#555;margin-bottom:1.75rem}
+.btn{display:inline-block;background:#1A3A6B;color:#F5F0E8;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;padding:13px 32px;border:none;cursor:pointer;letter-spacing:.3px;text-decoration:none;transition:opacity .2s}
+.btn:hover{opacity:.85}
+.lote{margin-top:.875rem;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#C9A84C}
+.produto{background:#1A3A6B;overflow:hidden;position:relative}
+.produto-grid{display:grid;grid-template-columns:1fr 1fr;min-height:460px}
+.camisa-col{position:relative;overflow:hidden}
+.camisa-col::before{content:'';position:absolute;top:0;left:-30%;width:130%;height:100%;background:#F0EBE0;transform:skewX(-6deg);z-index:0}
+.camisa-col img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;width:95%;max-width:220px;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.2))}
+.texto-col{padding:2.5rem 1.5rem 2.5rem 0.75rem;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:1}
+.sec-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;font-weight:500;margin-bottom:.75rem}
+.produto-titulo{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:#F5F0E8;line-height:1.25;margin-bottom:1rem}
+.produto-body{font-size:12px;line-height:1.8;color:rgba(245,240,232,.65);margin-bottom:1.5rem}
+.bullets{list-style:none;display:flex;flex-direction:column;gap:14px}
+.bullet{display:flex;flex-direction:column;gap:2px}
+.bullet-line{width:18px;height:2px;background:#C9A84C;margin-bottom:4px}
+.bullet-title{font-size:12px;font-weight:500;color:#F5F0E8;letter-spacing:.2px}
+.bullet-desc{font-size:11px;color:rgba(245,240,232,.5);line-height:1.4}
+.historia{background:#FAFAF8;border-top:1px solid #EAEAE6}
+.wrap{max-width:480px;margin:0 auto;padding:3rem 1.5rem}
+h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;line-height:1.25}
+.historia h2{color:#111;margin-bottom:1.5rem}
+.body-text{font-size:14px;line-height:1.85;color:#444;margin-bottom:0}
+.body-text p+p{margin-top:.875rem}
+.pullquote{font-family:'Playfair Display',serif;font-style:italic;font-size:17px;color:#1A3A6B;border-top:1px solid rgba(26,58,107,.15);padding-top:1.25rem;margin-top:1.75rem;line-height:1.6}
+.form-sec{background:#fff;border-top:1px solid #EAEAE6}
+.form-sec h2{color:#111;margin-bottom:0}
+.tally-wrap{width:100%;margin-top:1.5rem}
+.tally-wrap iframe{width:100%;border:none;min-height:600px;display:block}
+footer{background:#F0EDE6;border-top:1px solid #DDDDD8;padding:1.75rem 1.5rem;text-align:center}
+footer p{font-size:12px;color:#888;line-height:1.7}
+footer a{color:#1A3A6B;text-decoration:none}
+</style>
+</head>
+<body>
 
+<section class="hero">
+  <img class="hero-img" src="hero.jpg" alt="Torcida Bemol — Camisa Copa 2026">
+  <div class="hero-text">
+    <div class="badge">Edição limitada · Copa 2026</div>
+    <h1>A camisa exclusiva<br>da <em>torcida Bemol.</em></h1>
+    <p class="sub">Para quem vibra e torce com a alegria do time Penta Campeão. Uma peça pra marcar 2026 como um ano de renovação.</p>
+    <a href="#pre-venda" class="btn">Quero a minha →</a>
+    <p class="lote">Lote limitado · sem reposição</p>
+  </div>
+</section>
+
+<section class="produto">
+  <div class="produto-grid">
+    <div class="camisa-col">
+      <img src="camisa.png" alt="Camisa Torcida Bemol Copa 2026">
+    </div>
+    <div class="texto-col">
+      <p class="sec-label">O produto</p>
+      <h3 class="produto-titulo">Feita pra quem<br>não esquece.</h3>
+      <div class="produto-body">
+        <p>Design retrô que homenageia a história e celebra o passado.</p>
+      </div>
+      <ul class="bullets">
+        <li class="bullet">
+          <div class="bullet-line"></div>
+          <span class="bullet-title">Edição limitada</span>
+          <span class="bullet-desc">Lote único, sem reposição</span>
+        </li>
+        <li class="bullet">
+          <div class="bullet-line"></div>
+          <span class="bullet-title">Aerodry</span>
+          <span class="bullet-desc">Dry-fit pro clima que a gente conhece</span>
+        </li>
+        <li class="bullet">
+          <div class="bullet-line"></div>
+          <span class="bullet-title">Sublimação total</span>
+          <span class="bullet-desc">Cor viva, durabilidade real</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="historia">
+  <div class="wrap">
+    <h2>2026. Um ano pra reacender<br>a paixão pela torcida.</h2>
+    <div class="body-text">
+      <p>O futebol pulsa diferente quando você veste o que acredita.</p>
+      <p>A torcida Bemol vai estar lá. Com identidade, com orgulho, com a camisa certa no corpo.</p>
+      <p>Esse é o ano de reacender tudo isso.</p>
+    </div>
+    <p class="pullquote">Essa é a camisa certa para torcer, vibrar e comemorar!</p>
+  </div>
+</section>
+
+<section class="form-sec" id="pre-venda">
+  <div class="wrap">
+    <p class="sec-label" style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;font-weight:500;margin-bottom:.875rem">Pré-venda</p>
+    <h2>Garanta sua vaga na Seleção.</h2>
+  </div>
+  <div class="tally-wrap">
+    <iframe
+      src="https://tally.so/embed/OD82PR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      loading="lazy"
+      title="Formulário de pré-venda — Camisa Copa 2026"
+    ></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>Uma criação da torcida Bemol · Manaus, 2026<br>
+  Dúvidas? <a href="#">Fale com a gente</a></p>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});}));
+</script>
+</body>
+</html>
